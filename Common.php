@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 namespace app\admin\Controller;
 
 use think\Controller;
@@ -11,7 +11,7 @@ class Common extends Controller
         parent::__construct();
         $admin = session("user");
         if($admin){
-            echo "这是测试git";
+            echo "这是测试角色的git";
         }else{
             //获取用户相对于公众号的唯一ID
             $this->redirect("Login/login");
